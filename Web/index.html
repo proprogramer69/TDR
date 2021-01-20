@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+      function Compro(e){
+        key =e.keyCode || e.which;
+        tecla=String.fromCharCode(key).toString();
+        letras="abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890";
+
+        especiales=[8,13,127,32];
+        tecla_especial=false
+        for(var i in especiales){
+          if(key==especiales[i]){
+              tecla_especial=true
+              break
+          }
+        }
+        if(letras.indexOf(tecla)==-1 && !tecla_especial){
+          alert("caràcter no permès per evitar hackejos")
+          return false
+        }
+      }
+
+
+    </script>
+    <meta charset="UTF-8">
+    <title>tetrisrun</title>
+    <link rel="stylesheet" type="text/css" href="css/menu2.css">
+    <link rel="icon" type="image/png" href="logo/logo.png"> 
+</head>
+<body>
+  <center><div id="quadrat">
+  <form action="joc1.php" method="post">
+
+     <center><img src=tetrisrun.png></center> 
+
+    <center>
+      <h2>NOM</h2>
+    <input type="text" name="nom" id="nom" onkeypress="return Compro(event);" maxlength="15" required="">
+      <h2>NIVELL</h2>
+    <select name="nivell" id="niv">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+    </select>
+    </center>    
+    <center>
+      <input type="submit" value="START" id="start">
+    </center>
+  </form>
+  <center>
+      <a href="punts.php"><button id="puntuacio"> PUNTUACIÓ </button></a>
+    </center>
+  </div></center>
+</body>
+</html>

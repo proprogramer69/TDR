@@ -1,0 +1,30 @@
+body{
+  background-color: #000000;
+  color:white;
+}
+table{
+	margin-bottom: 30px
+}
+table, th, td {
+  
+  border: 2px solid red;
+  text-align: center;
+
+}
+td{
+	width: 150px;
+    height:35px;
+    font-size: 25px;
+}
+h1{
+	font-size: 60px;
+	/* Comentario */
+}
+#menu, #buscar{
+	background-color:red;
+	color:white;
+}
+h2{
+	font-size: 25px;
+	margin-bottom: 15px
+}

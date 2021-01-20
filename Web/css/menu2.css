@@ -1,0 +1,42 @@
+body{
+  width:99%;
+  background-image: url("tetrisgif.gif")}
+h2{
+	font-family: sans-serif;
+	color: #fff;
+	margin-top: 2%;
+	margin-bottom: 0px;
+}
+#quadrat{
+  width:800px;
+  background-color: black;
+}
+#nom{
+	margin-top: 0.5%;	
+	width: 100px;
+}
+#niv{
+	margin-top: 0.5%;
+}
+#puntuacio{
+	margin-top: 1%;
+	background-color: red;
+  	border: 4px solid #4CAF50;
+  	color: white;
+  	padding: 10px 15px;
+  	text-align: center;
+  	font-size: 15px;
+  	font-weight: bold;
+  	border-radius: 15%;
+}
+#start{
+	margin-top: 2%;
+	background-color: #4CAF50;
+  	border: 4px solid red;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	font-size: 30px;
+  	font-weight: bold;
+  	border-radius: 15%;
+}

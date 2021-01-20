@@ -590,37 +590,12 @@ if True:
                     for event in pygame.event.get():
                         if event.type == pygame.QUIT:
                             run = False
-                        """if event.type == pygame.KEYUP:
-                            if event.key == pygame.K_LEFT:  # dir que has aixecat el boto
-                                left = 0
-                            if event.key == pygame.K_RIGHT:
-                                right = 0
-                            if event.key == pygame.K_DOWN:
-                                dawn = 0
-    
-                        if event.type == pygame.KEYDOWN:
-                            if event.key == pygame.K_LEFT:  # dir que has pulsat el boto
-                                left = 1
-                            if event.key == pygame.K_RIGHT:
-                                right = 1
-                            if event.key == pygame.K_SPACE:
-                                pause = 1
-                                ran = random.randint(1, 2)
-                            if event.key == pygame.K_r:
-                                main_menu(win)
-                            if event.key == pygame.K_DOWN:
-                                dawn = 1
-                            if event.key == pygame.K_UP:  # canviar la posició de la llista de la pesa, o sigui la rotació
-                                current_piece.rotation += 1
-                                if not (valid_space(current_piece, grid, IA)):
-                                    current_piece.rotation -= 1"""
                     shape_pos = convert_shape_format(current_piece)  # cordenades de cada bloc de la fitxa
                     if (valid_space(current_piece, grid, IA)):
                         for i in range(len(shape_pos)):
                             x, y = shape_pos[i]
                             if y > -1:
-                                grid[y][
-                                    x] = current_piece.color  # pot quedar xulo:(225,225,225) #assigna les cordenades que son correctes de la fixa que esta caient a grid amb el seu corresponent color
+                                grid[y][x] = current_piece.color  # pot quedar xulo:(225,225,225) #assigna les cordenades que son correctes de la fixa que esta caient a grid amb el seu corresponent color
                     if change_piece:  # canvi de peça
                         # comprovar_forats(win,grid,6) #m'ajuda a comprovar coses de IA=1
                         for pos in shape_pos:
